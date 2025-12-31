@@ -20,7 +20,7 @@ const posts = [
 
 export default function Blog() {
   return (
-    <section className="py-20 ">
+    <section className="py-20 " id="blog">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-16">

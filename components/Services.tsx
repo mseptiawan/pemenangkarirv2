@@ -9,7 +9,7 @@ import {
 
 export default function Services() {
   return (
-    <section id="services" className="py-32 bg-white overflow-hidden">
+    <section id="services" className="py-8 md:py-32 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Judul Utama */}
         <div className="text-center mb-20">
@@ -70,7 +70,7 @@ export default function Services() {
                 ))}
               </div>
 
-              <button className="w-full sm:w-fit px-10 py-5 bg-[#10B981] text-white rounded-2xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-white hover:text-[#10B981] transition-all shadow-xl active:scale-95">
+              <button className="w-full sm:w-fit px-4 md:px-10 py-4 md:py-5 bg-[#10B981] text-white rounded-2xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-[#20a579] transition-all shadow-xl active:scale-95">
                 Mulai Automasi Klinik <ArrowRight size={18} />
               </button>
             </div>
@@ -109,13 +109,20 @@ export default function Services() {
                 Landing page profesional untuk mendukung sistem pendaftaran
                 online klinik Anda.
               </p>
-              <div className="pt-4 border-t border-slate-200 flex justify-between items-center group/link cursor-pointer">
-                <span className="text-sm font-bold">Portofolio Web</span>
+              <a
+                href="https://portofolio-ms.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pt-4 border-t border-slate-200 flex justify-between items-center group/link cursor-pointer"
+              >
+                <span className="text-sm font-bold text-slate-900 group-hover/link:text-[#4A5DDF] transition-colors">
+                  Portofolio Web
+                </span>
                 <ArrowUpRight
                   size={18}
-                  className="transition-transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1"
+                  className="text-slate-900 group-hover/link:text-[#4A5DDF] transition-transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1"
                 />
-              </div>
+              </a>
             </div>
           </div>
         </div>

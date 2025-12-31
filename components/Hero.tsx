@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-screen flex items-center bg-white pt-20 overflow-hidden">
+    <section className="relative w-full  flex items-center bg-white pt-20 overflow-hidden">
       {/* Soft Glow Background - Memberikan kesan teknologi tanpa terlihat norak */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-50 rounded-full filter blur-[100px] opacity-50 -z-10"></div>
 
@@ -11,7 +11,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* KIRI: Pesan Utama */}
           <div className="z-10">
-            <div className="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-100 px-3 py-1 rounded-full text-[#4A5DDF] text-xs font-bold mb-6">
+            <div className="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-100 px-3 py-1 rounded-full text-[#4A5DDF] text-xs font-bold mb-6 mt-8">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
@@ -51,10 +51,7 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="bg-[#4A5DDF] text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-3 hover:bg-[#3b4ab0] transition-all shadow-lg shadow-indigo-100">
-                Coba Demo Gratis <ArrowRight size={20} />
-              </button>
-              <button className="bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-xl font-bold hover:bg-slate-50 transition-all">
-                Lihat Layanan
+                Konsultasi Gratis <ArrowRight size={20} />
               </button>
             </div>
           </div>
@@ -62,7 +59,7 @@ export default function Hero() {
           {/* KANAN: Visual Medis Modern */}
           <div className="relative">
             {/* Main Image Frame */}
-            <div className="relative z-10 rounded-[40px] overflow-hidden border-8 border-slate-50 shadow-2xl">
+            <div className="hidden md:block relative z-10 rounded-[40px] overflow-hidden border-8 border-slate-50 shadow-2xl">
               <img
                 src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=2070&auto=format&fit=crop"
                 alt="Medical Assistant Technology"
@@ -71,7 +68,7 @@ export default function Hero() {
             </div>
 
             {/* Floating Info Card */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-5 rounded-2xl shadow-xl z-20 border border-slate-100">
+            <div className="hidden md:block absolute -bottom-6 -left-6 bg-white p-5 rounded-2xl shadow-xl z-20 border border-slate-100">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center font-bold">
                   99%

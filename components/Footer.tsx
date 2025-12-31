@@ -15,8 +15,12 @@ export default function Footer() {
           {/* Logo & Brand Identity */}
           <div className="md:col-span-4">
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 bg-[#4A5DDF] rounded-lg flex items-center justify-center text-white font-bold text-lg">
-                P
+              <div className="relative w-9 h-9 md:w-11 md:h-11 flex items-center justify-center">
+                <img
+                  src="/logo.png"
+                  alt="Logo PemenangKarir"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="text-xl font-poppins font-bold text-slate-900 tracking-tight">
                 Pemenang<span className="text-[#4A5DDF]">Karir</span>

@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,8 +45,16 @@ export default function Navbar() {
       >
         {/* LOGO */}
         <div className="flex items-center gap-2 relative z-[130]">
-          <div className="w-8 h-8 md:w-10 md:h-10 bg-[#4A5DDF] rounded-lg flex items-center justify-center text-white font-bold text-lg md:text-xl">
-            P
+          <div className="w-8 h-8 md:w-10 md:h-10 bg-[#4A5DDF] rounded-lg flex items-center justify-center overflow-hidden shadow-lg shadow-indigo-100">
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={40}
+              height={40}
+              priority // Memaksa gambar dimuat paling awal
+              unoptimized // Mematikan proses optimasi Next.js (sangat cocok untuk logo kecil)
+              className="w-full h-full object-contain" // Gunakan contain agar logo tidak terpotong
+            />
           </div>
           <span className="text-base md:text-xl font-poppins font-bold text-slate-900 tracking-tight">
             Pemenang<span className="text-[#4A5DDF]">Karir</span>

@@ -50,9 +50,14 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-[#4A5DDF] text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-3 hover:bg-[#3b4ab0] transition-all shadow-lg shadow-indigo-100">
+              <a
+                href="https://wa.me/6289630909617?text=Halo%20PemenangKarir,%20saya%20tertarik%20dengan%20solusi%20AI%20untuk%20otomasi%20klinik.%20Bisa%20bantu%20jelaskan?"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#4A5DDF] text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-3 hover:bg-[#3b4ab0] transition-all shadow-lg shadow-indigo-100 active:scale-95"
+              >
                 Konsultasi Gratis <ArrowRight size={20} />
-              </button>
+              </a>
             </div>
           </div>
 

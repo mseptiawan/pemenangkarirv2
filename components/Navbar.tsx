@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight, ExternalLink } from "lucide-react";
 import Image from "next/image";
 
 export default function Navbar() {
@@ -22,9 +22,14 @@ export default function Navbar() {
   }, [isOpen]);
 
   const navLinks = [
-    { name: "Layanan", href: "#services" },
-    { name: "Fitur", href: "#whyus" },
-    { name: "FAQ", href: "#faq" },
+    { name: "Layanan", href: "#services", internal: true },
+    { name: "Fitur", href: "#whyus", internal: true },
+    {
+      name: "Blog",
+      href: "https://blog-pemenangkarir.vercel.app",
+      internal: false,
+    },
+    { name: "FAQ", href: "#faq", internal: true },
   ];
 
   return (
@@ -51,9 +56,9 @@ export default function Navbar() {
               alt="Logo"
               width={40}
               height={40}
-              priority // Memaksa gambar dimuat paling awal
-              unoptimized // Mematikan proses optimasi Next.js (sangat cocok untuk logo kecil)
-              className="w-full h-full object-contain" // Gunakan contain agar logo tidak terpotong
+              priority
+              unoptimized
+              className="w-full h-full object-contain"
             />
           </div>
           <span className="text-base md:text-xl font-poppins font-bold text-slate-900 tracking-tight">
@@ -67,9 +72,14 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-slate-600 hover:text-[#4A5DDF] transition-colors"
+              target={link.internal ? "_self" : "_blank"}
+              rel={link.internal ? "" : "noopener noreferrer"}
+              className="text-sm font-medium text-slate-600 hover:text-[#4A5DDF] transition-colors flex items-center gap-1"
             >
               {link.name}
+              {!link.internal && (
+                <ExternalLink size={12} className="opacity-50" />
+              )}
             </a>
           ))}
         </div>
@@ -77,7 +87,7 @@ export default function Navbar() {
         {/* CTA DESKTOP */}
         <div className="hidden md:block">
           <a
-            href="https://wa.me/6289630909617?text=Halo%20PemenangKarir,%20saya%20tertarik%20konsultasi%20mengenai%20layanan%20AI%20untuk%20Klinik."
+            href="https://wa.me/6289630909617?text=Halo%20PemenangKarir,%20saya%20tertarik%20konsultasi%20mengenai%20layanan%20AI%20Automation."
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#4A5DDF] text-white px-6 py-4 rounded-full font-bold text-sm hover:bg-[#3b4ab3] transition-all flex items-center gap-2 active:scale-95 shadow-lg shadow-indigo-100"
@@ -108,12 +118,16 @@ export default function Navbar() {
             <div key={link.name} className="w-full flex flex-col items-center">
               <a
                 href={link.href}
+                target={link.internal ? "_self" : "_blank"}
+                rel={link.internal ? "" : "noopener noreferrer"}
                 onClick={() => setIsOpen(false)}
-                className="py-4 text-xl font-poppins font-semibold text-slate-800 hover:text-[#4A5DDF] active:scale-95 transition-all"
+                className="py-4 text-xl font-poppins font-semibold text-slate-800 hover:text-[#4A5DDF] active:scale-95 transition-all flex items-center gap-2"
               >
                 {link.name}
+                {!link.internal && (
+                  <ExternalLink size={18} className="text-slate-400" />
+                )}
               </a>
-              {/* PEMBATAS (DIVIDER) - Tidak muncul di item terakhir */}
               {index !== navLinks.length - 1 && (
                 <div className="w-12 h-[1px] bg-slate-100 my-1"></div>
               )}
@@ -122,7 +136,7 @@ export default function Navbar() {
 
           <div className="mt-10 w-full px-6">
             <a
-              href="https://wa.me/6289630909617?text=Halo%20PemenangKarir,%20saya%20ingin%20tanya%20lebih%20lanjut%20mengenai%20solusi%20AI%20Klinik%20(Mobile%20Menu)."
+              href="https://wa.me/6289630909617?text=Halo%20PemenangKarir,%20saya%20tertarik%20konsultasi%20mengenai%20layanan%20AI%20Automation."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full bg-[#4A5DDF] text-white py-4 rounded-2xl font-bold text-base shadow-lg shadow-indigo-100 flex items-center justify-center gap-3 active:scale-95 transition-all"

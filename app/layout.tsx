@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   // Title idealnya 50-60 karakter
   title: "PemenangKarir - Automasi WA & AI Agent Bisnis 24/7",
   description:
-    "Ubah WhatsApp bisnis Anda menjadi mesin sales otomatis. Solusi AI Agent untuk Showroom, Properti, Klinik, dan UMKM. Respon cepat, hemat biaya, dan tanpa langganan bulanan.",
+    "Ubah WhatsApp bisnis Anda menjadi mesin sales otomatis. Solusi AI Agent untuk Showroom, Properti, Klinik, dan UMKM. Respon cepat, hemat biaya.",
 
   keywords: [
     "AI Automation Indonesia",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 
   // Open Graph (Tampilan saat link dishare di WA/FB)
   openGraph: {
-    title: "PemenangKarir | Automasi AI Bisnis Tanpa Langganan",
+    title: "PemenangKarir | Automasi AI Bisnis Profesional",
     description:
       "Tingkatkan konversi penjualan 24/7 dengan asisten AI pintar. Hemat jutaan rupiah biaya admin!",
     url: "https://pemenangkarir.vercel.app", // Ganti dengan domain asli kamu nanti

@@ -14,7 +14,6 @@ export default function Home() {
       <Navbar />
 
       <div className="flex flex-col gap-y-0">
-        e
         <Hero />
         {/* Berikan section yang kontras: satu putih, satu abu-abu sangat muda */}
         <div className="bg-slate-50/50">

@@ -5,6 +5,7 @@ import {
   Bot,
   ArrowUpRight,
   ShieldCheck,
+  Zap,
 } from "lucide-react";
 
 export default function Services() {
@@ -17,12 +18,13 @@ export default function Services() {
             Our Expertise
           </div>
           <h2 className="text-4xl md:text-6xl font-poppins font-bold text-slate-900 leading-tight tracking-tight">
-            Solusi Pintar <span className="text-[#4A5DDF]">Klinik Modern</span>
+            Automasi Pintar <br className="hidden md:block" />
+            <span className="text-[#4A5DDF]">Bisnis Skala Besar</span>
           </h2>
           <p className="mt-6 text-slate-500 font-inter text-lg max-w-2xl mx-auto">
-            Kami menghadirkan infrastruktur AI yang memastikan operasional
-            klinik Anda tetap berjalan optimal tanpa bergantung penuh pada admin
-            manual.
+            Kami membangun infrastruktur AI yang memastikan operasional bisnis
+            Anda tetap melayani pelanggan 24/7 tanpa bergantung pada admin
+            manual yang terbatas.
           </p>
         </div>
 
@@ -34,36 +36,37 @@ export default function Services() {
             <div className="relative z-10 flex flex-col h-full text-white">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white text-[10px] md:text-xs font-bold uppercase tracking-wider mb-8 w-fit">
                 <Sparkles size={12} className="text-yellow-300 md:w-[14px]" />
-                Specialized AI Agent
+                Specialized AI Business Agent
               </div>
 
               <h3 className="text-3xl md:text-5xl font-poppins font-bold mb-6 leading-tight">
-                Asisten Digital <br className="hidden md:block" /> Profesional
-                24/7
+                Sales Assistant <br className="hidden md:block" /> Digital
+                Profesional
               </h3>
 
               <p className="text-indigo-100 font-inter text-base md:text-xl leading-relaxed mb-10 max-w-xl">
-                Tingkatkan kepuasan pasien dengan asisten AI berbasis n8n yang
-                tidak hanya menjawab, tapi mengerti kebutuhan pasien secara
-                manusiawi.
+                Tingkatkan konversi penjualan dengan AI yang tidak hanya
+                menjawab FAQ, tapi mampu mengeksekusi order, booking, dan
+                follow-up secara manusiawi.
               </p>
 
-              {/* Fitur Highlights sebagai Benefit */}
+              {/* Fitur Highlights (Universal) */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 mb-12">
                 {[
-                  "Jadwalkan Janji Temu Otomatis",
-                  "Cek Jadwal Dokter & Praktik",
-                  "Bahasa Manusiawi & Ingat Konteks",
-                  "Sinkronisasi Kalender & Email",
-                  "Knowledge Base FAQ Medis",
-                  "Respon Instan dalam Detik",
+                  "Booking & Reservasi Otomatis",
+                  "Cek Stok & Update Harga Real-time",
+                  "Qualify Leads (Filter Pembeli Serius)",
+                  "Integrasi Database & CRM Global",
+                  "Penanganan Keluhan Pelanggan 24/7",
+                  "Kalkulator Simulasi (KPR/Kredit)",
+                  "Bahasa Luwes & Ingat Konteks Chat",
                 ].map((f) => (
                   <div
                     key={f}
                     className="flex items-center gap-3 text-white/90 font-medium text-sm md:text-base"
                   >
                     <div className="w-5 h-5 bg-white/20 rounded-full flex items-center justify-center shrink-0">
-                      <div className="w-2 h-2 bg-yellow-300 rounded-full"></div>
+                      <Zap size={10} className="text-yellow-300" />
                     </div>
                     {f}
                   </div>
@@ -71,7 +74,7 @@ export default function Services() {
               </div>
 
               <button className="w-full sm:w-fit px-4 md:px-10 py-4 md:py-5 bg-[#10B981] text-white rounded-2xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-[#20a579] transition-all shadow-xl active:scale-95">
-                Mulai Automasi Klinik <ArrowRight size={18} />
+                Mulai Automasi Bisnis <ArrowRight size={18} />
               </button>
             </div>
 
@@ -86,14 +89,15 @@ export default function Services() {
                 <ShieldCheck size={24} />
               </div>
               <h4 className="text-xl font-poppins font-bold text-slate-900 mb-2">
-                Terima Beres
+                Sistem Terima Beres
               </h4>
               <p className="text-slate-500 text-sm leading-relaxed mb-6">
-                Kami tangani seluruh maintenance dan update sistem. Anda cukup
-                fokus melayani pasien.
+                Kami tangani seluruh maintenance, update API WhatsApp, dan
+                pembaruan AI. Anda cukup fokus pada pertumbuhan bisnis
+                (scaling).
               </p>
               <div className="flex items-center gap-2 text-[#4A5DDF] text-xs font-bold uppercase">
-                Fully Managed Solution
+                Managed by AI Experts
               </div>
             </div>
 
@@ -103,20 +107,20 @@ export default function Services() {
                 <Globe size={24} />
               </div>
               <h4 className="text-xl font-poppins font-bold text-slate-900 mb-2">
-                Web Infrastructure
+                Digital Presence
               </h4>
               <p className="text-slate-500 text-sm leading-relaxed mb-4">
-                Landing page profesional untuk mendukung sistem pendaftaran
-                online klinik Anda.
+                Landing page berkecepatan tinggi yang terintegrasi langsung
+                dengan sistem chatbot dan database bisnis Anda.
               </p>
               <a
-                href="https://portofolio-ms.vercel.app/"
+                href="https://wa.me/6289630909617"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="pt-4 border-t border-slate-200 flex justify-between items-center group/link cursor-pointer"
               >
                 <span className="text-sm font-bold text-slate-900 group-hover/link:text-[#4A5DDF] transition-colors">
-                  Portofolio Web
+                  Konsultasi Gratis
                 </span>
                 <ArrowUpRight
                   size={18}

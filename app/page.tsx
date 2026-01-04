@@ -14,15 +14,13 @@ export default function Home() {
       <Navbar />
 
       <div className="flex flex-col gap-y-0">
+        e
         <Hero />
-
         {/* Berikan section yang kontras: satu putih, satu abu-abu sangat muda */}
         <div className="bg-slate-50/50">
           <Services />
         </div>
-
         <WhyUs />
-
         <div className="bg-[#2E1065]">
           {" "}
           {/* Hanya bagian CTA yang gelap untuk impact */}

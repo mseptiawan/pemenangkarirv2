@@ -4,19 +4,24 @@ import { ChevronDown, HelpCircle, MessageCircle } from "lucide-react";
 
 const faqData = [
   {
-    question: "Apa itu chatbot WhatsApp PemenangKarir?",
+    question: "Apa itu Solusi Automasi dari PemenangKarir?",
     answer:
-      "Chatbot WhatsApp PemenangKarir adalah program cerdas berbasis AI yang dirancang khusus untuk mensimulasikan percakapan manusia. Fokus utamanya adalah mengotomatisasi layanan klinik seperti pendaftaran pasien, penjadwalan janji temu, dan menjawab FAQ medis secara instan 24/7.",
+      "Kami membangun sistem asisten digital berbasis AI yang terintegrasi langsung dengan WhatsApp bisnis Anda. Sistem ini mampu menangani chat pelanggan secara mandiri, mulai dari menjawab pertanyaan produk, cek stok real-time, hingga mengatur janji temu secara otomatis 24/7.",
   },
   {
-    question: "Apakah sistem ini aman untuk data privasi pasien?",
+    question: "Apakah data bisnis dan pelanggan saya aman?",
     answer:
-      "Keamanan adalah prioritas kami. Sistem PemenangKarir menggunakan enkripsi tingkat tinggi dan dirancang untuk mematuhi regulasi privasi data kesehatan. Kami memastikan informasi pasien tetap aman, rahasia, dan hanya dapat diakses oleh pihak berwenang di klinik Anda.",
+      "Sangat aman. Kami menggunakan infrastruktur cloud pribadi (seperti Supabase) dengan enkripsi standar industri. Data Anda tidak dibagikan ke pihak ketiga, dan seluruh riwayat percakapan tetap berada dalam kendali penuh bisnis Anda.",
   },
   {
-    question: "Bagaimana cara kerja chatbot untuk janji temu?",
+    question: "Apakah sistem ini sulit dioperasikan?",
     answer:
-      "Alurnya sangat simpel: Pasien memilih menu 'Janji Temu', lalu AI akan menampilkan jadwal dokter secara real-time. Setelah pasien memilih waktu, sistem secara otomatis mengonfirmasi slot tersebut dan mengirimkan notifikasi instan ke admin klinik.",
+      "Sama sekali tidak. Kami menerapkan prinsip 'Terima Beres'. Tim kami yang akan melakukan setup, integrasi, hingga pengujian. Anda dan tim admin cukup memantau dashboard atau membiarkan AI bekerja secara otomatis tanpa perlu keahlian IT.",
+  },
+  {
+    question: "Berapa biaya operasional setelah sistem terpasang?",
+    answer:
+      "Sistem kami dirancang untuk efisiensi maksimal. Anda tidak perlu membayar biaya langganan software yang mahal setiap bulan. Biaya hanya dikeluarkan untuk penggunaan token AI (OpenAI) yang sangat murah, hanya sekitar Rp 15 - Rp 50 per balasan chat.",
   },
 ];
 
@@ -41,8 +46,8 @@ export default function FAQ() {
             Pertanyaan <span className="text-[#4A5DDF]">Umum</span>
           </h2>
           <p className="text-slate-500 text-base md:text-lg font-inter">
-            Temukan jawaban cepat seputar integrasi AI untuk operasional klinik
-            Anda.
+            Segala hal yang perlu Anda ketahui tentang implementasi AI untuk
+            efisiensi bisnis Anda.
           </p>
         </div>
 
@@ -105,10 +110,10 @@ export default function FAQ() {
             </div>
             <div>
               <p className="font-bold text-base md:text-lg">
-                Masih punya pertanyaan?
+                Punya kebutuhan khusus?
               </p>
               <p className="text-slate-400 text-xs md:text-sm">
-                Tim kami siap membantu operasional klinik Anda.
+                Diskusikan kebutuhan spesifik bisnis Anda dengan tim kami.
               </p>
             </div>
           </div>
@@ -116,7 +121,7 @@ export default function FAQ() {
             href="https://wa.me/6289630909617"
             className="w-full md:w-auto bg-white text-slate-900 px-8 py-3.5 rounded-xl font-bold hover:bg-[#4A5DDF] hover:text-white transition-all text-center"
           >
-            Chat Support
+            Konsultasi Sekarang
           </a>
         </div>
       </div>

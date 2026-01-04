@@ -3,7 +3,7 @@ import {
   Zap,
   Clock,
   ShieldCheck,
-  Stethoscope,
+  TrendingUp,
   ArrowRight,
   CheckCircle,
 } from "lucide-react";
@@ -11,29 +11,29 @@ import {
 const reasons = [
   {
     title: "Respon Kilat 24/7",
-    desc: "AI kami memastikan setiap pertanyaan pasien dijawab dalam hitungan detik, bahkan di luar jam operasional klinik.",
-    icon: <Clock size={28} />, // Ukuran icon sedikit dikecilkan untuk mobile
+    desc: "AI kami memastikan setiap pertanyaan calon pembeli dijawab dalam 2 detik, bahkan saat tim Anda sedang beristirahat atau di hari libur.",
+    icon: <Clock size={28} />,
     color: "text-blue-600",
     bgColor: "bg-blue-50",
   },
   {
-    title: "Otomasi Janji Temu",
-    desc: "Pasien bisa langsung mendaftar dan cek jadwal dokter tanpa perlu antre di WhatsApp, semuanya otomatis masuk database.",
+    title: "Otomasi Leads & Sales",
+    desc: "Mulai dari cek stok, hitung simulasi cicilan, hingga reservasi jadwal survey—semuanya berjalan otomatis dan masuk ke database Anda.",
     icon: <Zap size={28} />,
     color: "text-[#4A5DDF]",
     bgColor: "bg-indigo-50",
   },
   {
-    title: "Privasi Data Pasien",
-    desc: "Kami menerapkan standar enkripsi tinggi untuk menjamin kerahasiaan rekam medis dan database pasien Anda tetap aman.",
+    title: "Keamanan Data Bisnis",
+    desc: "Kami menjamin database pelanggan Anda aman. Sistem terintegrasi langsung dengan infrastruktur cloud pribadi tanpa pihak ketiga yang berisiko.",
     icon: <ShieldCheck size={28} />,
     color: "text-emerald-600",
     bgColor: "bg-emerald-50",
   },
   {
-    title: "Spesialis AI Klinik",
-    desc: "Bukan sekadar bot umum, sistem kami dirancang khusus memahami istilah medis dan alur pelayanan kesehatan.",
-    icon: <Stethoscope size={28} />,
+    title: "Skalabilitas Tanpa Batas",
+    desc: "Hadapi lonjakan chat dari iklan (Ads) tanpa perlu menambah biaya gaji admin. Satu sistem AI sanggup melayani ribuan chat sekaligus.",
+    icon: <TrendingUp size={28} />,
     color: "text-rose-600",
     bgColor: "bg-rose-50",
   },
@@ -47,26 +47,18 @@ export default function WhyUs() {
           {/* SISI KIRI: PENJELASAN */}
           <div className="w-full lg:w-5/12 lg:sticky lg:top-32">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-indigo-50 rounded-full text-[#4A5DDF] text-[10px] md:text-xs font-bold uppercase tracking-widest mb-6">
-              <CheckCircle size={14} /> Solusi Masa Depan Klinik
+              <CheckCircle size={14} /> Solusi Efisiensi Bisnis
             </div>
             <h2 className="text-3xl md:text-5xl font-poppins font-bold text-slate-900 leading-[1.2] mb-6 md:mb-8">
-              Mengapa Klinik <br className="hidden md:block" />
+              Mengapa Bisnis <br className="hidden md:block" />
               Mempercayakan <br className="hidden md:block" />
-              AI ke <span className="text-[#4A5DDF]">PemenangKarir?</span>
+              Automasi ke <span className="text-[#4A5DDF]">PemenangKarir?</span>
             </h2>
             <p className="text-slate-500 font-inter text-base md:text-lg leading-relaxed mb-8 md:mb-10 max-w-md">
-              Tugas saya adalah memberikan solusi bagi klinik untuk
-              menghilangkan hambatan admin melalui teknologi asisten AI yang
-              cerdas dan siap pakai.
+              Saya membantu owner bisnis menghilangkan hambatan operasional
+              melalui teknologi AI yang cerdas, luwes, dan berorientasi pada
+              hasil (ROI).
             </p>
-
-            <button className="group flex items-center gap-3 font-poppins font-bold text-slate-900 hover:text-[#4A5DDF] transition-colors text-base md:text-lg">
-              Pelajari Standar Keamanan
-              <ArrowRight
-                size={20}
-                className="group-hover:translate-x-2 transition-transform"
-              />
-            </button>
           </div>
 
           {/* SISI KANAN: GRID CARDS */}
@@ -91,7 +83,6 @@ export default function WhyUs() {
                     {r.desc}
                   </p>
 
-                  {/* Dekorasi Garis bawah - disembunyikan di mobile agar lebih clean, atau tetap ada */}
                   <div className="mt-auto pt-6 flex justify-end">
                     <div className="w-8 h-1 bg-slate-200 rounded-full group-hover:w-12 md:group-hover:w-16 group-hover:bg-[#4A5DDF] transition-all duration-500"></div>
                   </div>

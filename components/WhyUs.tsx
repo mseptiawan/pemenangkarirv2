@@ -11,7 +11,7 @@ import {
 const reasons = [
   {
     title: "Respon Kilat 24/7",
-    desc: "AI kami memastikan setiap pertanyaan calon pembeli dijawab dalam 2 detik, bahkan saat tim Anda sedang beristirahat atau di hari libur.",
+    desc: "AI kami memastikan setiap pertanyaan calon pembeli dijawab dalam hitungan detik, bahkan saat tim Anda sedang beristirahat atau di hari libur.",
     icon: <Clock size={28} />,
     color: "text-blue-600",
     bgColor: "bg-blue-50",
@@ -25,7 +25,7 @@ const reasons = [
   },
   {
     title: "Keamanan Data Bisnis",
-    desc: "Kami menjamin database pelanggan Anda aman. Sistem terintegrasi langsung dengan infrastruktur cloud pribadi tanpa pihak ketiga yang berisiko.",
+    desc: "Kami menjamin database pelanggan Anda aman. Sistem terintegrasi langsung dengan infrastruktur cloud.",
     icon: <ShieldCheck size={28} />,
     color: "text-emerald-600",
     bgColor: "bg-emerald-50",

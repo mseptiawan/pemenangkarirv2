@@ -25,11 +25,8 @@ export default function CTACard() {
 
             <p className="text-indigo-100 font-inter text-base md:text-xl mb-10 md:mb-12 max-w-2xl leading-relaxed">
               Otomasi bisnis Anda dan layani pelanggan dalam hitungan detik.
-              Dapatkan{" "}
-              <span className="text-white font-bold underline decoration-[#10B981] decoration-2 md:decoration-4 underline-offset-4">
-                Potongan Khusus
-              </span>{" "}
-              untuk 5 klien pertama bulan ini.
+              Dapatkan Keuntungan jadi yang pertama pakai AI untuk operasional
+              bisnis anda
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-5 w-full">
@@ -57,8 +54,8 @@ export default function CTACard() {
             {/* Indikator Kepercayaan */}
             <div className="mt-10 md:mt-12 flex flex-col sm:flex-row flex-wrap justify-center gap-4 md:gap-6 text-indigo-200/60 text-xs md:text-sm font-medium">
               <div className="flex items-center justify-center gap-2">
-                <Check size={16} className="text-emerald-400" /> Tanpa Biaya
-                Langganan Bulanan
+                <Check size={16} className="text-emerald-400" /> Ratusan Chat
+                Terhandle
               </div>
               <div className="flex items-center justify-center gap-2">
                 <Check size={16} className="text-emerald-400" /> Setup Kilat &

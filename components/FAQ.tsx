@@ -18,11 +18,6 @@ const faqData = [
     answer:
       "Sama sekali tidak. Kami menerapkan prinsip 'Terima Beres'. Tim kami yang akan melakukan setup, integrasi, hingga pengujian. Anda dan tim admin cukup memantau dashboard atau membiarkan AI bekerja secara otomatis tanpa perlu keahlian IT.",
   },
-  {
-    question: "Berapa biaya operasional setelah sistem terpasang?",
-    answer:
-      "Sistem kami dirancang untuk efisiensi maksimal. Anda tidak perlu membayar biaya langganan software yang mahal setiap bulan. Biaya hanya dikeluarkan untuk penggunaan token AI (OpenAI) yang sangat murah, hanya sekitar Rp 15 - Rp 50 per balasan chat.",
-  },
 ];
 
 export default function FAQ() {
